@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+
+    <Spinner
+        android:id="@+id/spinner_country_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edit_text_population"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter population"
+        android:inputType="number"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/image_view_flag"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Country Flag"/>
+
+    <Button
+        android:id="@+id/button_select_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Select Flag" />
+
+    <Button
+        android:id="@+id/button_add_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Country"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

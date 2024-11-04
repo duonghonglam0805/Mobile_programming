@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Spinner để chọn tên quốc gia -->
+    <TextView
+        android:id="@+id/textView_select_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Country"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinner_country_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+
+    <!-- EditText để nhập dân số -->
+    <TextView
+        android:id="@+id/textView_population"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Population"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/edit_text_population"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <!-- ImageView để hiển thị cờ quốc gia -->
+    <TextView
+        android:id="@+id/text_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Flag"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/image_view_flag"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="Flag Image" />
+
+    <!-- Button để chọn ảnh cờ -->
+    <Button
+        android:id="@+id/button_select_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Flag Image"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button để thêm quốc gia -->
+    <Button
+        android:id="@+id/button_add_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Country"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

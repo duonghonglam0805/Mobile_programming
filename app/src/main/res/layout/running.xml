@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="100"
+        android:textColor="#E41111"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="82dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="28dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/animal_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxShin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxrabbit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxShin" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTurtle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxrabbit" />
+
+    <SeekBar
+        android:id="@+id/seekBarShin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@android:color/transparent"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="120dp"
+        android:thumb="@drawable/shin_run"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxShin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBarRabbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@android:color/transparent"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:thumb="@drawable/rabbit_run"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxrabbit"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarShin" />
+
+    <SeekBar
+        android:id="@+id/seekBarTurtle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@android:color/transparent"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:thumb="@drawable/turtle_run"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxTurtle"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarRabbit" />
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="172dp"
+        android:src="@drawable/play_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

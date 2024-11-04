@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Tonghop">
+
+    <TextView
+        android:id="@+id/personalInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_blue"
+        android:text="Thông tin cá nhân"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TableLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textViewfullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name: "
+                android:textSize="22dp"
+                android:textColor="@color/button_blue_500"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/editTextFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Enter your full name" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textViewCCCD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CCCD: "
+                android:textSize="22dp"
+                android:textColor="@color/button_blue_500"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTextCCCD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textViewCertification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Certification"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonIntermediate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Intermediate" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCollege"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="College" />
+
+        <RadioButton
+            android:id="@+id/radioButtonUniversity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="University"
+            android:checked="true"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/textViewHobbies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hobbies"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reading books"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxListen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Listen to music" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sport" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textViewAddInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Additional information"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/editTextMultiLineAddInfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:minLines="3"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/background_button"
+        android:text="Send"
+        app:backgroundTint="@null" />
+
+
+</LinearLayout>
